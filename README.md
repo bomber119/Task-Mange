@@ -9,7 +9,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
   - 1.2.2 IDE: WebStorm
   - 1.2.3 Chrome Plugin: Augury
   - 1.2.4 json-server 安装  
-`npm i -g json-server`
+    ```npm i -g json-server```
   - 1.2.5 POSTMAN: restful API 调试工具
 
 ### 第二章 Material UI
