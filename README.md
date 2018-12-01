@@ -37,7 +37,12 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
   `ng g m shared`
   - 2.1.5 项目与任务的关系
   - 2.1.6 项目与用户的关系
-- 2.2
+- 2.2 Material UI布局
+  - 2.2.1 创建header组件  
+  `ng g c core/header --spec=false`
+  - 2.2.2 创建footer组件  
+  `ng g c core/footer --spec=false`
+  - 2.2.3 flex布局方式
 
 ### 第三章 动画
 
