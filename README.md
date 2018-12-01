@@ -42,7 +42,15 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
   `ng g c core/header --spec=false`
   - 2.2.2 创建footer组件  
   `ng g c core/footer --spec=false`
-  - 2.2.3 flex布局方式
+  - 2.2.3 创建sidebar组件   
+  `ng g c core/sidebar --spec=false`
+  - 2.2.4 flex布局方式
+- 2.3 Material 介绍
+  - 2.3.1 安装Material及其依赖库   
+  `npm i --save @angular/material`  
+  `npm i --save @angular/cdk@7.1.0`
+  - 2.3.2 MatSideNav组件
+  - 2.3.3 MatToolbar组件
 
 ### 第三章 动画
 
