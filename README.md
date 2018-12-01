@@ -14,29 +14,29 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ### 第二章 Material UI
 - 2.1 项目工程结构
-- 2.1.1 项目结构
-  - 根模块：src/app 
-    - 核心模块：core
-    - 服务模块：service
-    - Redux模块：reducer
-    - Effect模块：effect
-    - 共享模块：shared
-    - 登录模块：login
-    - 项目模块：projects
-    - 任务模块：tasks
-    - 日历模块：calendar
-    - 领域对象：domain
-    - 动画目录：animation
-    - 工具目录：utils
-  - 资源目录：src/assets
-- 2.1.2 新建工程   
+  - 2.1.1 项目结构
+    - 根模块：src/app 
+      - 核心模块：core
+      - 服务模块：service
+      - Redux模块：reducer
+      - Effect模块：effect
+      - 共享模块：shared
+      - 登录模块：login
+      - 项目模块：projects
+      - 任务模块：tasks
+      - 日历模块：calendar
+      - 领域对象：domain
+      - 动画目录：animation
+      - 工具目录：utils
+    - 资源目录：src/assets
+  - 2.1.2 新建工程   
   `ng new Task-Mange --style=scss`
-- 2.1.3 创建核心模块  
+  - 2.1.3 创建核心模块  
   `ng g m core` 
-- 2.1.4 创建共享模块  
+  - 2.1.4 创建共享模块  
   `ng g m shared`
-- 2.1.5 项目与任务的关系
-- 2.1.6 项目与用户的关系
+  - 2.1.5 项目与任务的关系
+  - 2.1.6 项目与用户的关系
 - 2.2
 
 ### 第三章 动画
