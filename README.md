@@ -49,8 +49,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
   - 2.3.1 安装Material及其依赖库   
   `npm i --save @angular/material`  
   `npm i --save @angular/cdk@7.1.0`
-  - 2.3.2 MatSideNav组件
-  - 2.3.3 MatToolbar组件
+  - 2.3.2 MatSideNav组件的使用
+  - 2.3.3 MatToolbar组件的使用
 
 ### 第三章 动画
 
