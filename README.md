@@ -49,8 +49,37 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
   - 2.3.1 安装Material及其依赖库   
   `npm i --save @angular/material`  
   `npm i --save @angular/cdk@7.1.0`
-  - 2.3.2 MatSideNav组件的使用
-  - 2.3.3 MatToolbar组件的使用
+  - 2.3.2 MatSideNav 组件的使用
+  - 2.3.3 MatToolbar 组件的使用
+- 2.4 MatIcon 组件的使用
+  - 2.4.1 svgIcon 注入
+- 2.5 Input 组件的使用
+  - 2.5.1 新建 domain/user.model
+  - 2.5.2 新建 login 模块   
+  `ng g m login`
+  - 2.5.3 新建 login组件    
+  `ng g c login/login --spec=false`
+- 2.6 MatCard 和 MatButton 组件的使用
+  - 2.6.1 MatCard
+  - 2.6.2 MatButton
+  - 2.6.3 login的模版设计
+- 2.7 侧滑菜单使用 MatList组件
+  - 2.7.1 MatList MatNavList
+  - 2.7.2 sidebar的模版设计
+- 2.8 Material Theme 自定义主题切换   
+  - [官方参考说明](https://material.angular.io/guide/theming)
+- 2.9 GridList 设计注册页面头像列表
+- 2.10 Dialog对话框的使用
+  - 2.10.1 新建project模块
+  - 2.10.2 在project模块中新建:
+    - project-list 项目列表组件
+    - project-item 项目组件
+    - *new-project 项目新建组件(Dialog)
+      - 父组件向Dialog传值
+      - Dialog向父组件返回值
+    - invite 项目邀请组件
+  
+  
 
 ### 第三章 动画
 
