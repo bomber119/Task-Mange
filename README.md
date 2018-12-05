@@ -78,8 +78,33 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
       - 父组件向Dialog传值
       - Dialog向父组件返回值
     - invite 项目邀请组件
-  
-  
+- 2.11 AutoComplete 组件的使用
+  - 设计invite组件
+  - AutoComplete需要和Input配合使用
+- 2.12 任务列表的设计
+  - 新建task-home组件 构造一组原始数据用于展现
+  - 新建task-list组件
+  - 新建task-header组件 设计menu菜单
+  - 新建task-item组件
+- 2.13 task-item组件设计
+  - checkbox radio select介绍
+  - matTooltip 组件介绍
+  - ngClass 通过多条件绑定class属性
+- 2.14 新任务对话框设计
+  - 2.14.1 Datepicker组件介绍  
+    ```
+    // 在SharedModule中加入如下代码，可调整DatePicker的国家样式
+    providers: [
+       {provide: MAT_DATE_LOCALE, useValue: 'zh-CN'},
+    ],
+    ```
+  - 2.14.2 新建new-task组件
+- 2.15 任务列表 移动内容对话框
+  - select组件介绍
+  - 移动列表所有内容的功能实现
+- 2.16 & 2.17 完成主框架
+  - Project界面：修改、删除功能
+  - Task界面：TaskList的新建、修改、移动、删除功能
 
 ### 第三章 动画
 

@@ -6,6 +6,7 @@ export const loadSvgResources = (ir: MatIconRegistry, ds: DomSanitizer) => {
   const imgDir = 'assets/img';
   const sidebarDir = `${imgDir}/sidebar`;
   const avatarDir = `${imgDir}/avatar`;
+  const iconDir = `${imgDir}/icons`;
   const dayDir = `${imgDir}/days`;
   const days = [
     1, 2, 3, 4, 5, 6, 7, 8, 9, 10,
@@ -15,6 +16,9 @@ export const loadSvgResources = (ir: MatIconRegistry, ds: DomSanitizer) => {
 
   // 使用图表注册方法把每个图片注入
   ir.addSvgIconSetInNamespace('avatars', ds.bypassSecurityTrustResourceUrl(`${avatarDir}/avatars.svg`));
+  ir.addSvgIcon('add', ds.bypassSecurityTrustResourceUrl(`${iconDir}/add.svg`));
+  ir.addSvgIcon('move', ds.bypassSecurityTrustResourceUrl(`${iconDir}/move.svg`));
+  ir.addSvgIcon('delete', ds.bypassSecurityTrustResourceUrl(`${iconDir}/delete.svg`));
   ir.addSvgIcon('unassigned', ds.bypassSecurityTrustResourceUrl(`${sidebarDir}/unassigned.svg`));
   ir.addSvgIcon('day', ds.bypassSecurityTrustResourceUrl(`${sidebarDir}/day.svg`));
   ir.addSvgIcon('week', ds.bypassSecurityTrustResourceUrl(`${sidebarDir}/week.svg`));

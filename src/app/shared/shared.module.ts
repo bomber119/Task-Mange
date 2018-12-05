@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
+import 'hammerjs';
 import {
   MatButtonModule,
   MatIconModule,
@@ -10,15 +10,31 @@ import {
   MatInputModule,
   MatListModule,
   MatSlideToggleModule,
-  MatGridListModule, MatDialogModule,
+  MatGridListModule,
+  MatDialogModule,
+  MatAutocompleteModule,
+  MatMenuModule,
+  MatCheckboxModule,
+  MatTooltipModule,
+  MatRadioModule,
+  MatDatepickerModule,
+  MatNativeDateModule,
+  MatSelectModule,
+  MAT_DATE_LOCALE,
 } from '@angular/material';
+import { ConfirmDialogComponent } from './confirm-dialog/confirm-dialog.component';
 
 @NgModule({
-  declarations: [],
+  providers: [
+    {provide: MAT_DATE_LOCALE, useValue: 'zh-CN'}, // 设置datepicker的国家样式
+  ],
+  declarations: [ConfirmDialogComponent ],
+  entryComponents: [ConfirmDialogComponent],
   imports: [
     CommonModule,
     MatButtonModule,
     MatIconModule,
+    MatMenuModule,
     MatToolbarModule,
     MatCardModule,
     MatFormFieldModule,
@@ -27,11 +43,19 @@ import {
     MatSlideToggleModule,
     MatGridListModule,
     MatDialogModule,
+    MatAutocompleteModule,
+    MatCheckboxModule,
+    MatTooltipModule,
+    MatRadioModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
+    MatSelectModule,
   ],
   exports: [
     CommonModule,
     MatButtonModule,
     MatIconModule,
+    MatMenuModule,
     MatToolbarModule,
     MatCardModule,
     MatFormFieldModule,
@@ -40,6 +64,13 @@ import {
     MatSlideToggleModule,
     MatGridListModule,
     MatDialogModule,
-  ]
+    MatAutocompleteModule,
+    MatCheckboxModule,
+    MatTooltipModule,
+    MatRadioModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
+    MatSelectModule,
+  ],
 })
 export class SharedModule { }
