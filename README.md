@@ -107,6 +107,17 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
   - Task界面：TaskList的新建、修改、移动、删除功能
 
 ### 第三章 动画
+- 3.1 animations介绍
+- 3.2 缓动函数和关键帧
+- 3.3 Card和Task的动画
+  - trigger 绑定到元素
+  - state -> style 定义不同状态的样式
+  - translation -> animate 状态转化时执行动画
+- 3.4 路由动画
+  - 路由动画不能之间绑定到模版元素上
+  - Group 同时执行一组动画
+  - Query 父节点选择子节点
+  - Stagger 将动画运用到多个选择到的子节点上,并设置延时
 
 ### 第四章 Angular的核心概念
 

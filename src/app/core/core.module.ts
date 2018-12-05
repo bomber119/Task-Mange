@@ -4,9 +4,11 @@ import { MatIconRegistry } from '@angular/material';
 import { DomSanitizer } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SharedModule } from '../shared/shared.module';
+import { AppRoutingModule } from '../app-routing.module';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
+
 
 import { loadSvgResources } from '../utils/svg.util';
 
@@ -20,11 +22,14 @@ import { loadSvgResources } from '../utils/svg.util';
     HttpClientModule,
     BrowserAnimationsModule,
     SharedModule,
+    AppRoutingModule,
   ],
   exports: [
     HeaderComponent,
     FooterComponent,
     SidebarComponent,
+    AppRoutingModule,
+    SharedModule,
   ]
 })
 export class CoreModule {

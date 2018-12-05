@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import 'hammerjs';
 import {
   MatButtonModule,
+  MatSidenavModule,
   MatIconModule,
   MatToolbarModule,
   MatCardModule,
@@ -22,6 +23,7 @@ import {
   MatSelectModule,
   MAT_DATE_LOCALE,
 } from '@angular/material';
+
 import { ConfirmDialogComponent } from './confirm-dialog/confirm-dialog.component';
 
 @NgModule({
@@ -33,6 +35,7 @@ import { ConfirmDialogComponent } from './confirm-dialog/confirm-dialog.componen
   imports: [
     CommonModule,
     MatButtonModule,
+    MatSidenavModule,
     MatIconModule,
     MatMenuModule,
     MatToolbarModule,
@@ -54,6 +57,7 @@ import { ConfirmDialogComponent } from './confirm-dialog/confirm-dialog.componen
   exports: [
     CommonModule,
     MatButtonModule,
+    MatSidenavModule,
     MatIconModule,
     MatMenuModule,
     MatToolbarModule,
