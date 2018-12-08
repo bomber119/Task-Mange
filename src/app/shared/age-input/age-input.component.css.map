@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,QAAS;EACP,KAAK,EAAE,IAAI;;AAEb,UAAW;EACT,OAAO,EAAE,IAAI;EACb,SAAS,EAAE,MAAM;EACjB,cAAc,EAAE,GAAG;EACnB,WAAW,EAAE,QAAQ;;AAGvB,uBAAwB;EACtB,WAAW,EAAE,IAAI",
+"sources": ["age-input.component.scss"],
+"names": [],
+"file": "age-input.component.css"
+}
