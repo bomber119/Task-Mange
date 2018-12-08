@@ -120,6 +120,35 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
   - Stagger 将动画运用到多个选择到的子节点上,并设置延时
 
 ### 第四章 Angular的核心概念
+- 4.1 依赖性注入
+  - Injector 创建依赖注入的实例
+  - Provider 如何创建Injector
+  - Object 需要依赖的对象
+- 4.2 ChangeDetection 变化检测
+  - ApplicationRef监听NgZone的onTurnDone，然后执行检测
+  - 组件树 --> CD树 正常检测是遍历CD树上的所有元素
+  - OnPush,关闭该组件的CD检测
+- 4.3 Drag/Drop指令
+- 4.4 结构型指令、模块、样式
+  - *ngIf *ngFor
+    通过ViewContainerRef和TemplateRef来动态的设定模版中的元素
+  - ngClass 用于条件动态指定样式类（一组样式）
+  - ngStyle 用于条件动态指定样式（少量样式）
+  - [class.your_style] 一组自定义样式直接对应一个条件true/false加载
+- 4.5 模版驱动型表单
+  - [(ngModel)] 双向绑定
+  - 在task中建立QuickTask组件
+- 4.6 响应式表单 Login组件
+  - FormControl 表单控件
+  - FormGroup
+  - FormBuilder
+  - 同步验证器
+  - 异步验证器
+  - 动态指定验证器
+- 4.7 响应式表单 Register组件
+  - 自定义一个表单控件imageListSelect
+  - 将自定义的表单控件加入到Register组件
+
 
 ### 第五章 RxJS的操作符
 

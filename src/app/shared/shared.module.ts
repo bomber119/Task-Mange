@@ -25,15 +25,24 @@ import {
 } from '@angular/material';
 
 import { ConfirmDialogComponent } from './confirm-dialog/confirm-dialog.component';
+import { DirectiveModule } from '../directive/directive.module';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ImageListSelectComponent } from './image-list-select/image-list-select.component';
 
 @NgModule({
   providers: [
     {provide: MAT_DATE_LOCALE, useValue: 'zh-CN'}, // 设置datepicker的国家样式
   ],
-  declarations: [ConfirmDialogComponent ],
+  declarations: [
+    ConfirmDialogComponent,
+    ImageListSelectComponent,
+  ],
   entryComponents: [ConfirmDialogComponent],
   imports: [
     CommonModule,
+    DirectiveModule,
+    FormsModule,
+    ReactiveFormsModule,
     MatButtonModule,
     MatSidenavModule,
     MatIconModule,
@@ -56,6 +65,9 @@ import { ConfirmDialogComponent } from './confirm-dialog/confirm-dialog.componen
   ],
   exports: [
     CommonModule,
+    DirectiveModule,
+    FormsModule,
+    ReactiveFormsModule,
     MatButtonModule,
     MatSidenavModule,
     MatIconModule,
@@ -75,6 +87,7 @@ import { ConfirmDialogComponent } from './confirm-dialog/confirm-dialog.componen
     MatDatepickerModule,
     MatNativeDateModule,
     MatSelectModule,
+    ImageListSelectComponent,
   ],
 })
 export class SharedModule { }
