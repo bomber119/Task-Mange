@@ -160,6 +160,38 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
     - of: 接收一系列数据，并把它们emit出去
   - 转换操作符：
     - map、mapTo、pluck
+  - 创建 QuoteService
+  - 创建 Data.json,启动json-server
+- 5.3 RxJS的操作符
+  - Observable的三种状态，也是Subscribe时的三个参数
+    - next
+    - error
+    - complete
+  - 特殊的Observable
+    - 永不结束: 计时器
+    - Never：不结束，也不发射任何数据
+    - Empty：直接进入complete状态，不发射任何数据流
+    - Throw：直接进入error状态，抛出错误
+  - do 操作符
+  - scan / reduce 操作符
+  - filter,take(first/last),skip 操作符
+  - Interval, Timer 创建类操作符
+  - 实战创建一个debug.util，存在版本问题
+  - 生产环境启动  
+  `ng serve --prod=true`
+- 5.4 RxJS的操作符
+  - debounce，debounceTime
+  - distinct，distinctUntilChanged
+  - merge，concat，startWith
+  - combineLatest，withLatestFrom，zip
+- 5.5 创建age-input组件
+  - 模版中UI元素的创建
+- 5.6 创建age-input组件
+  - 表单控件与UI元素的关联
+  - 处理年龄对象中年龄数值和年龄单位的数据流合并
+- 5.7 创建age-input组件
+  - 处理生日和年龄对象数据流的合并，
+  - 模版中UI元素的值随数据流进行变化
 
 ### 第六章 Angular的响应式编程
 

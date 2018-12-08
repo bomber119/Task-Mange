@@ -5,11 +5,13 @@ import { DomSanitizer } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SharedModule } from '../shared/shared.module';
 import { AppRoutingModule } from '../app-routing.module';
+import { ServicesModule } from '../services/services.module';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 
 import { loadSvgResources } from '../utils/svg.util';
+import '../utils/debug.util';
 
 @NgModule({
   declarations: [
@@ -22,6 +24,7 @@ import { loadSvgResources } from '../utils/svg.util';
     BrowserAnimationsModule,
     SharedModule,
     AppRoutingModule,
+    ServicesModule.forRoot(),
   ],
   exports: [
     HeaderComponent,
@@ -31,7 +34,12 @@ import { loadSvgResources } from '../utils/svg.util';
     SharedModule,
   ],
   providers: [
-    {provide: 'BASE_COMFIG', useValue: 'http://localhost:3000'}
+    {
+      provide: 'BASE_CONFIG',
+      useValue: {
+        uri: 'http://localhost:3000'
+      }
+    }
   ]
 })
 export class CoreModule {
