@@ -152,6 +152,14 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ### 第五章 RxJS的操作符
 - 5.1 RxJS 响应式编程介绍
+  - Rx的关键是把任何变化都想象成事件流
+- 5.2 RxJS的操作符
+  - 创建类操作符：
+    - from: 可以把数组、Promise、Iterable转化为Observable
+    - fromEvent: 可以把事件转化为Observable
+    - of: 接收一系列数据，并把它们emit出去
+  - 转换操作符：
+    - map、mapTo、pluck
 
 ### 第六章 Angular的响应式编程
 
