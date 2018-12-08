@@ -1,0 +1,34 @@
+<div class="task-lists">
+  <app-task-list
+    class="list-container"
+    *ngFor="let list of lists"
+    app-droppable
+    [dropTags]="['task-item', 'task-list']"
+    [dragEnterClass]="'drag-enter'"
+    [app-draggable]="true"
+    [dragTag]="'task-list'"
+    [draggedClass]="'drag-start'"
+    [dragData]="list"
+    (dropped)="handleMove($event, list)"
+    [ngStyle]="{'order': list.order}"
+  ><!-- 该元素即是可拖动的元素，又是可放置元素的宿主 -->
+    <app-task-header
+      [header]="list.name"
+      (newTask)="launchNewTaskDialog()"
+      (moveAllTask)="launchCopyTaskDialog()"
+      (DeleteList)="launchConfirmDialog()"
+      (EditList)="launchEditListDialog(list)"
+    ></app-task-header>
+    <app-quick-task
+      (quickTask)="handleQuickTask($event)"></app-quick-task>
+    <app-task-item
+      *ngFor="let task of list.tasks"
+      [item]="task"
+      (taskClick)="launchUpdateTaskDialog(task)">
+    </app-task-item>
+  </app-task-list>
+</div>
+
+<button mat-fab class="fab-button" color="primary" type="button" (click)="launchNewListDialog()">
+  <mat-icon>add</mat-icon>
+</button>
