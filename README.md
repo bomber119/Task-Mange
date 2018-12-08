@@ -148,8 +148,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 - 4.7 响应式表单 Register组件
   - 自定义一个表单控件imageListSelect
   - 将自定义的表单控件加入到Register组件
-
-
+  
 ### 第五章 RxJS的操作符
 
 ### 第六章 Angular的响应式编程
