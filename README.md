@@ -150,6 +150,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
   - 将自定义的表单控件加入到Register组件
   
 ### 第五章 RxJS的操作符
+- 5.1 RxJS 响应式编程介绍
 
 ### 第六章 Angular的响应式编程
 
